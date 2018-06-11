@@ -27,10 +27,10 @@ print("1 = Angrypool\n"
 poolchoice = int(input("Choose pool: "))
 
 if poolchoice == 1:
-    pool = f"http://angrypool.com/api/walletEx?address="
+    pool = "http://angrypool.com/api/walletEx?address="
     poolname = str("Angrypool")
 if poolchoice == 2:
-    pool = f"http://api.bsod.pw/api/walletEx?address="
+    pool = "http://api.bsod.pw/api/walletEx?address="
     poolname = str("Bsod")
 
 # Static variables
