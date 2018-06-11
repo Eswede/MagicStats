@@ -45,7 +45,7 @@ while True :
     # Gets API data
     url = "https://api.coinmarketcap.com/v2/ticker/2773/"
     ginresp = requests.get("https://explorer.gincoin.io/api/getnetworkhashps")
-    poolurl = f"{pool}{wallet}"
+    poolurl = "{pool}{wallet}"
     # Calculations from API data from coin block explorer
     ginhash = float(ginresp.text)
     perchash = round(mining * gh / ginhash / 10,5)
